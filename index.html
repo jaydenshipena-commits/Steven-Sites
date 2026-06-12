@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Question For You ❤️</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align:center;
+            padding-top:100px;
+            color:white;
+        }
+
+        .card{
+            background:white;
+            color:black;
+            width:500px;
+            margin:auto;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 0 20px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            color:#ff4f81;
+        }
+
+        button{
+            padding:15px 30px;
+            margin:10px;
+            border:none;
+            border-radius:10px;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        .yes{
+            background:#ff4f81;
+            color:white;
+        }
+
+        .maybe{
+            background:#ddd;
+        }
+
+        #message{
+            margin-top:20px;
+            font-size:22px;
+            color:#ff4f81;
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>Hi Beautiful ❤️</h1>
+
+    <p>
+        I have a question I've been wanting to ask...
+    </p>
+
+    <h2>Would you go on a date with me? 😊</h2>
+
+    <button class="yes" onclick="sayYes()">
+        YES ❤️
+    </button>
+
+    <button class="maybe" onclick="sayMaybe()">
+        Maybe 😅
+    </button>
+
+    <div id="message"></div>
+
+</div>
+
+<script>
+
+function sayYes(){
+    document.getElementById("message").innerHTML =
+    "YAY! 🎉 You just made my day! I can't wait ❤️";
+}
+
+function sayMaybe(){
+    document.getElementById("message").innerHTML =
+    "I'll take a maybe 😄. Think about it and let me know!";
+}
+
+</script>
+
+</body>
+</html>
